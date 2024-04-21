@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel = "stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4710d06b9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="letter L.png" id="l" class="logo" style="height: 70px; width: 30px;">
+                <img src="letter-akshya.png" id="akshya" class="logo" style="height: 10%; width: 12%; margin-bottom: -17px; margin-left: -330px;">
+                <ul id="sidemenu" style="margin-top: 10px;">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web <span>Developer</span></p>
+                <h1>Hi, I'm <span>Lakshya</span> Gupta <br>MANIT CSE'27</h1>
+            </div>
+        </div>
+    </div>
+<div id="about" style="margin-left: -150px;">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="sourabh-removebg-preview.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1><br>
+                <p>I'm a driven individual hailing from a middle-class family in Lucknow, Uttar Pradesh. Growing up, I developed a strong creative mindset and honed my problem-solving skills through my life endeavours.</p>
+                <div class="tab-titles">
+                    <span class="tab-links active-link" onclick="opentab('goal')">Goal</span>
+                    <span class="tab-links" onclick="opentab('experience')">Experience</span>
+                    <span class="tab-links" onclick="opentab('education')">Education</span>
+                </div>
+
+                <div class="tab-contents active-tab" id="goal">
+                    <ul>My goal as a Computer Science student is to excel in web development, leveraging creativity and problem-solving to craft innovative solutions. The dynamic nature of web technologies and their ability to transform ideas into user-friendly experiences drive my passion. I aim to stay updated with the latest trends, using my skills to create impactful projects that enhance user experiences and contribute positively to society.</ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                        <ul><span>Frontend Web Development</span><br>Created a <b><i>Single Page Portfolio Website</i></b> using <li>HTML/CSS</li><li>JavaScript/Jquery</li><li>Bootstrap</li></ul>
+                        <ul><span>Backend Web Development</span><br>Created a <b><i>Simlple To-Do List</i></b> using <li>PHP</li><li>JavaScript</li><li>SQL</li></ul>
+
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Present</span><br>MANIT CSE</li>
+                        <li><span>2023</span><br>12TH <i>(92.2%)</i> from Mary Gardiner's Convent School</li>
+                        <li><span>2021</span><br>10TH <i>(89.6%)</i> from DPS Lucknow</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="skills" style="margin-left: -150px;">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="skills-list">
+            <div>
+                <i class="fa-solid fa-laptop-code" style="color: #e45252;"></i>
+                <h2>Frontend Web Developer</h2>
+                <ol style="list-style-type: disc;">
+                    <li>HTML<span class = "progress"><span class = "progress-bar bg-danger" style = "width:80%"></span></span></li>
+                    <li>CSS<span class = "progress"><span class = "progress-bar bg-danger" style = "width:70%"></span></span></li>
+                    <li>Bootstrap<span class = "progress"><span class = "progress-bar bg-danger" style = "width:50%"></span></span></li>
+                </ol>
+            </div>
+            <!-- <div>
+                <i class="fa-regular fa-file-code" style="color: #e45252;"></i>
+                <h2>Backend Web Developer</h2>
+                <ol style="list-style-type: disc;">
+                    <li>PHP<span class = "progress"><span class = "progress-bar bg-danger" style = "width:60%"></span></span></li>
+                    <li>JavaScript<span class = "progress"><span class = "progress-bar bg-danger" style = "width:30%"></span></span></li>
+                    <li>SQL<span class = "progress"><span class = "progress-bar bg-danger" style = "width:30%"></span></span></li>
+                </ol>
+            </div> -->
+            <div>
+                <i class="fa-solid fa-code" style="color: #e45252;"></i>
+                <h2>Programming Languages</h2>
+                <ol style="list-style-type: disc;">
+                    <li>C<span class = "progress"><span class = "progress-bar bg-danger" style = "width:70%"></span></span></li>
+                    <li>C++<span class = "progress"><span class = "progress-bar bg-danger" style = "width:60%"></span></span></li>
+                    <li>Python<span class = "progress"><span class = "progress-bar bg-danger" style = "width:40%"></span></span></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="contact" class="container m-4" style="margin-left: -150px;">
+    <h6 class="display-5 text-center ">Contact Me</h6>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="container p-3">
+                <p class="text-muted text-center fs-3" style="color: #e45252;">Here's my Contact Info</p>
+                <div class="text-black-s text-center fs-4" style="color: #e45252;">My Email</div>
+                <div class="text-white-s text-center fs-5">guptalakshya001@gmail.com</div>
+                <div class="text-black-s text-center fs-4" style="color: #e45252;">My Phone No.</div>
+                <div class="text-white-s text-center fs-5">+91 73920 30230</div>
+                <div class="text-black-s text-center fs-4" style="color: #e45252;">My Address</div>
+                <div class="text-white-s text-center fs-5">MANIT, Bhopal <br> Madhya Pradesh 462 003</div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="container">
+                <p class="text-muted text-center fs-3">You can also Write to Me</p>
+                <div class="container p-3">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="name" class="form-label" style="color: #e45252;">Enter Your Name</label>
+                                    <input type="text" class="form-control" name="name" id="name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="emailid" class="form-label" style="color: #e45252;">Enter Your Email</label>
+                                    <input type="email" class="form-control" name="email" id="emailid">
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject" class="form-label" style="color: #e45252;">Enter the subject</label>
+                                    <input type="text" class="form-control" name="subject" id="subject">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message" class="form-label" style="color: #e45252;">Enter Your Message</label>
+                                    <textarea class="form-control" name="message" id="message"></textarea>
+                                </div>
+                                <div class="form-group text-center">
+                                    <input type="submit" class="btn btn-outline-dark" value="Send Message" style="background-color: rgb(222, 47, 47);">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container" style="margin-left: -15px;">
+        <div class="logo">
+            <i class="fa-solid fa-user-graduate" style="font-size: 30px; margin-bottom: 10px; color: #e45252;"></i>
+            <p style="margin-bottom: -6px;">Living, learning & leveling up</p>
+            <p>one day at a time.</p>
+        </div>
+        <div class="social"style="margin-bottom: -6px;"><p>Social links</p>
+            <div class="social-links">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+        </div>
+        <div class="copyright-box" style="margin-top: 6px;">
+            <p>Handcrafted by me © 2024. All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right ="0";
+    }
+    function closemenu(){
+        sidemenu.style.right ="-200px";
+    }
+</script>
+</body>
+</html>
